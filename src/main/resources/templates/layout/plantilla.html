@@ -6,7 +6,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 <html xmlns="http://wwww.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
     <head th:fragment="head">
-        <title>TechShop</title>
+        <title>PracticaGrupal</title>
         <meta charset="UTF-8"/>
         <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
         <link th:href="@{/webjars/font-awesome/css/all.css}" rel="stylesheet"/>
@@ -25,39 +25,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <ul class="navbar-nav">
-                            <li class="nav-item px-2"><a class="nav-link" th:href="@{/categoria/listado}">[[#{plantilla.categorias}]]</a></li>
-                            <li class="nav-item px-2"><a class="nav-link" th:href="@{/producto/listado}">[[#{plantilla.productos}]]</a></li>                           
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" 
-                                   data-bs-toggle="dropdown" 
-                                   href="#" 
-                                   role="button" 
-                                   aria-expanded="false">[[#{plantilla.pruebas}]]</a>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item"  th:href="@{/pruebas/listado}">[[#{plantilla.asociaciones}]]</a></li>
-                                    <li><a class="dropdown-item"  th:href="@{/pruebas/listado2}">[[#{plantilla.consultas}]]</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item px-2"><a class="nav-link" th:href="@{/usuario/listado}">[[#{plantilla.usuarios}]]</a></li>
-                        </ul>
-                        <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">[[#{plantilla.idioma}]]</a>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item"  th:href="@{/(lang=es)}">ES</a></li>
-                                    <li><a class="dropdown-item" th:href="@{/(lang=en)}">EN</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+                            <li class="nav-item px-2"><a class="nav-link" th:href="@{/practica/listado}">[[#{plantilla.categorias}]]</a></li>
+
                     </div>
                 </div>
             </nav>
             <section id="main-header" class="py-2 bg-success text-white">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h1><i class="fas fa-cog"></i> [[#{plantilla.suTienda}]]</h1>
-                        </div>
+                    <div>
+                        <h1><i class="fas fa-cog"></i> [[#{plantilla.suTienda}]]</h1>
                     </div>
                 </div>
             </section>
@@ -72,5 +48,5 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             </div>
 
         </footer>
-    </body>
+         </body>
 </html>
